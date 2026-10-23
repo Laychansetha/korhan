@@ -737,3 +737,64 @@ function setupScrollEffects() {
     });
   }
 }
+
+// ============================================================
+// Experience Card Image Lightbox
+// ============================================================
+function openExpLightbox(imgSrc, title, desc) {
+  // Create modal if it doesn't exist yet
+  let modal = document.getElementById('expLightboxModal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'expLightboxModal';
+    modal.innerHTML = `
+      <div id="expLightboxBackdrop" class="absolute inset-0 bg-black/90 backdrop-blur-md"></div>
+      <div class="relative z-10 max-w-5xl w-full mx-4 flex flex-col max-h-[95vh] rounded-3xl overflow-hidden shadow-2xl border border-white/15">
+        <!-- Top bar -->
+        <div class="flex items-center justify-between px-5 py-3.5 bg-stone-950/90 border-b border-white/10 shrink-0">
+          <span id="expLightboxTitle" class="text-sm font-bold text-amber-300 truncate pr-4"></span>
+          <button id="expLightboxClose" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-colors shrink-0">
+            <i class="fas fa-times text-sm"></i>
+          </button>
+        </div>
+        <!-- Image -->
+        <div class="flex-1 bg-black flex items-center justify-center overflow-hidden">
+          <img id="expLightboxImg" src="" alt="" class="max-h-[75vh] w-auto max-w-full object-contain" />
+        </div>
+        <!-- Caption -->
+        <div class="px-6 py-4 bg-stone-950 shrink-0">
+          <p id="expLightboxDesc" class="text-xs sm:text-sm text-stone-300 leading-relaxed"></p>
+        </div>
+      </div>`;
+    modal.className = 'fixed inset-0 z-[60] flex items-center justify-center transition-opacity duration-300';
+    modal.style.display = 'none';
+    document.body.appendChild(modal);
+
+    // Close on backdrop click
+    document.getElementById('expLightboxBackdrop').addEventListener('click', closeExpLightbox);
+    document.getElementById('expLightboxClose').addEventListener('click', closeExpLightbox);
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeExpLightbox();
+    });
+  }
+
+  // Populate & show
+  document.getElementById('expLightboxImg').src = imgSrc;
+  document.getElementById('expLightboxImg').alt = title;
+  document.getElementById('expLightboxTitle').textContent = title;
+  document.getElementById('expLightboxDesc').textContent = desc;
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  requestAnimationFrame(() => { modal.style.opacity = '1'; });
+}
+
+function closeExpLightbox() {
+  const modal = document.getElementById('expLightboxModal');
+  if (modal) {
+    modal.style.opacity = '0';
+    setTimeout(() => { modal.style.display = 'none'; }, 200);
+    document.body.style.overflow = '';
+  }
+}
