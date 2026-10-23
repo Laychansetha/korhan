@@ -19,7 +19,7 @@ const i18n = {
     // Hero
     heroTag: "អេកូទេសចរណ៍សហគមន៍ • ខេត្តស្ទឹងត្រែង",
     heroTitle: "ស្វាគមន៍មកកាន់រមណីយដ្ឋានកោះហាន",
-    heroSubtitle: "តំបន់ដីសើមរ៉ាមសារ ខេត្តស្ទឹងត្រែង — ឋានសួគ៌ធម្មជាតិព្រៃលិចទឹកកណ្ដាលដងទន្លេមេគង្គ ឆ្នេរខ្សាច់កោះដ៏ស្ងប់ស្ងាត់ និងបដិសណ្ឋារកិច្ចសហគមន៍",
+    heroSubtitle: "តំបន់ដីសើមរ៉ាមសារ ខេត្តស្ទឹងត្រែង ឋានសួគ៌ធម្មជាតិព្រៃលិចទឹកកណ្ដាលដងទន្លេមេគង្គ ឆ្នេរខ្សាច់កោះដ៏ស្ងប់ស្ងាត់ និងបដិសណ្ឋារកិច្ចសហគមន៍",
     heroCtaLearn: "ស្វែងយល់បន្ថែម",
     heroCtaBook: "ទាក់ទងកក់ដំណើរកម្សាន្ត",
 
@@ -47,7 +47,7 @@ const i18n = {
     // Experiences
     expBadge: "សកម្មភាពពិសេស",
     expTitle: "បទពិសោធន៍ដែលមិនអាចបំភ្លេចបាននៅកោះហាន",
-    expSub: "រីករាយជាមួយសកម្មភាពចម្រុះ وسطធម្មជាតិដងទន្លេមេគង្គ ផ្ដល់ភាពស្រស់ស្រាយ និងភាពស្ងប់ស្ងាត់",
+    expSub: "រីករាយជាមួយសកម្មភាពចម្រុះ ធម្មជាតិដងទន្លេមេគង្គ ផ្ដល់ភាពស្រស់ស្រាយ និងភាពស្ងប់ស្ងាត់",
     exp1Title: "ជិះទូកកាយ៉ាក់ក្នុងព្រៃលិចទឹក",
     exp1Desc: "អុំទូកកាយ៉ាក់ផ្សងព្រេងកាត់តាមព្រៃលិចទឹកបុរាណ ជ្រែករវាងមែកធាងឫសឈើធំៗ និងទស្សនាសត្វស្លាបទឹកកម្រនៃដងទន្លេមេគង្គ។",
     exp2Title: "បោះតង់លើកោះខ្សាច់ស្ងប់ស្ងាត់",
@@ -419,7 +419,7 @@ function setupLanguage() {
 function applyLanguage() {
   const dict = i18n[currentLang];
   document.documentElement.lang = currentLang;
-  
+
   if (currentLang === "en") {
     document.body.classList.add("lang-en");
   } else {
@@ -451,8 +451,8 @@ function renderDestinations() {
   if (!container) return;
 
   const isKm = currentLang === "km";
-  const filtered = currentCategoryFilter === "all" 
-    ? destinationsData 
+  const filtered = currentCategoryFilter === "all"
+    ? destinationsData
     : destinationsData.filter(d => d.category === currentCategoryFilter);
 
   container.innerHTML = filtered.map((item, idx) => `
@@ -607,7 +607,7 @@ function prevLightbox() {
 function updateLightboxContent() {
   const item = destinationsData[currentLightboxIdx];
   const isKm = currentLang === "km";
-  
+
   const imgEl = document.getElementById("lightboxImg");
   const titleEl = document.getElementById("lightboxTitle");
   const descEl = document.getElementById("lightboxDesc");
@@ -707,7 +707,7 @@ function setupScrollEffects() {
 
   window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
-    
+
     // Navbar appearance
     if (navbar) {
       if (scrollY > 50) {
