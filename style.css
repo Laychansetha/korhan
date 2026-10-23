@@ -1,0 +1,156 @@
+/* 
+  Koh Han Resort (រមណីយដ្ឋានកោះហាន) - Ecotourism Style System
+  Palette: Deep Forest Green, Sand Gold, River Teal, Earthy Wood
+*/
+
+:root {
+  --color-forest-dark: #0f281e;
+  --color-forest: #1b4332;
+  --color-forest-light: #2d6a4f;
+  --color-forest-accent: #40916c;
+  --color-sand: #d4a373;
+  --color-sand-light: #faedcd;
+  --color-sand-bg: #fefae0;
+  --color-wood: #8c532b;
+  --color-wood-dark: #5c3417;
+  --color-river: #2a6f97;
+  --color-river-deep: #013a63;
+  --color-bg-light: #fbf9f5;
+  --color-card-bg: rgba(255, 255, 255, 0.92);
+  --color-text-main: #262c28;
+  --color-text-muted: #5c6660;
+  --font-khmer: 'Kantumruy Pro', 'Battambang', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Base Khmer font styling with optimal line-height for diacritics */
+body {
+  font-family: var(--font-khmer);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-main);
+  line-height: 1.7;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+[lang="en"] body,
+body.lang-en {
+  font-family: var(--font-sans);
+}
+
+.khmer-font {
+  font-family: var(--font-khmer);
+}
+
+.latin-font {
+  font-family: var(--font-sans);
+}
+
+/* Custom Glassmorphism */
+.glass-nav {
+  background: rgba(15, 40, 30, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -5px rgba(27, 67, 50, 0.08);
+}
+
+.glass-card-dark {
+  background: rgba(15, 40, 30, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Subtle river shimmer animation */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.hero-bg-zoom {
+  animation: heroZoom 24s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+
+/* Image Hover Zoom effect */
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom-container img {
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom-container:hover img {
+  transform: scale(1.07);
+}
+
+/* Button & Badge styling */
+.btn-nature {
+  background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+  color: #ffffff;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(27, 67, 50, 0.3);
+}
+
+.btn-nature:hover {
+  background: linear-gradient(135deg, #2d6a4f 0%, #40916c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(27, 67, 50, 0.4);
+}
+
+.btn-sand {
+  background: linear-gradient(135deg, #d4a373 0%, #bc6c25 100%);
+  color: #ffffff;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(188, 108, 37, 0.3);
+}
+
+.btn-sand:hover {
+  background: linear-gradient(135deg, #dda15e 0%, #d4a373 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(188, 108, 37, 0.45);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d6a4f;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1b4332;
+}
+
+/* Lightbox Modal Animation */
+#lightboxModal {
+  transition: opacity 0.3s ease;
+}
+#lightboxModal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Mobile floating action bar padding */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px;
+  }
+}
