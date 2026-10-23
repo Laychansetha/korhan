@@ -490,7 +490,7 @@ function renderDestinations() {
   `).join("");
 }
 
-// Render Tour Packages with exact pricing
+// Render Tour Packages with exact pricing (Compact single-row layout)
 function renderPackages() {
   const container = document.getElementById("packagesContainer");
   if (!container) return;
@@ -499,55 +499,55 @@ function renderPackages() {
   const dict = i18n[currentLang];
 
   container.innerHTML = packagesData.map(pkg => `
-    <div class="bg-white rounded-3xl p-6 lg:p-7 shadow-lg border ${pkg.popular ? 'border-emerald-600 ring-2 ring-emerald-500/20' : 'border-stone-200/80'} relative flex flex-col justify-between transition-all hover:shadow-2xl">
+    <div class="min-w-[270px] sm:min-w-[285px] lg:min-w-0 flex-shrink-0 snap-start bg-white rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-xl border ${pkg.popular ? 'border-emerald-600 ring-2 ring-emerald-500/20' : 'border-stone-200/80'} relative flex flex-col justify-between transition-all duration-300 hover:-translate-y-1">
       ${pkg.popular ? `
-        <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-emerald-700 to-green-600 text-white text-xs font-bold px-3.5 py-1 rounded-full shadow-md uppercase tracking-wider">
-          ${isKm ? 'ពេញនិយមបំផុត' : 'Most Popular'}
+        <div class="absolute -top-3 right-4 bg-gradient-to-r from-emerald-700 to-green-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm uppercase tracking-wider">
+          ${isKm ? 'ពេញនិយមបំផុត' : 'Popular'}
         </div>
       ` : ''}
 
       <div>
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
-            <i class="far fa-clock mr-1"></i> ${isKm ? pkg.durationKm : pkg.durationEn}
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/80">
+            <i class="far fa-clock mr-1 text-[10px]"></i> ${isKm ? pkg.durationKm : pkg.durationEn}
           </span>
         </div>
 
-        <h3 class="text-xl font-bold text-stone-900 mb-2">
+        <h3 class="text-base font-bold text-stone-900 mb-1.5 leading-snug">
           ${isKm ? pkg.titleKm : pkg.titleEn}
         </h3>
         
-        <p class="text-sm text-stone-600 mb-6 leading-relaxed">
+        <p class="text-[11px] text-stone-500 mb-3.5 leading-relaxed line-clamp-2">
           ${isKm ? pkg.summaryKm : pkg.summaryEn}
         </p>
 
-        <!-- Pricing Tier Box -->
-        <div class="bg-stone-50 rounded-2xl p-4 mb-6 border border-stone-200/70">
-          <div class="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-2.5">
-            ${isKm ? 'តារាងតម្លៃតាមចំនួនសមាជិក' : 'Group Size Rates'}
+        <!-- Pricing Tier Box (Compact) -->
+        <div class="bg-stone-50 rounded-xl p-3 mb-3.5 border border-stone-200/60">
+          <div class="text-[10px] font-bold text-stone-500 uppercase tracking-wider mb-1.5">
+            ${isKm ? 'តម្លៃតាមចំនួនសមាជិក' : 'Group Rates'}
           </div>
-          <div class="space-y-2">
+          <div class="space-y-1">
             ${pkg.pricing.map(tier => `
-              <div class="flex items-center justify-between text-sm py-1 border-b border-stone-200/40 last:border-none">
+              <div class="flex items-center justify-between text-xs py-0.5 border-b border-stone-200/40 last:border-none">
                 <span class="text-stone-700 font-medium">${isKm ? tier.rangeKm : tier.rangeEn}</span>
-                <span class="font-bold text-emerald-900">
-                  ${tier.price} <span class="text-xs font-normal text-stone-500">${isKm ? '/' + tier.unitKm : '/' + tier.unitEn}</span>
+                <span class="font-bold text-emerald-900 text-xs">
+                  ${tier.price} <span class="text-[10px] font-normal text-stone-500">${isKm ? '/' + tier.unitKm : '/' + tier.unitEn}</span>
                 </span>
               </div>
             `).join("")}
           </div>
         </div>
 
-        <!-- Included List -->
-        <div class="mb-6">
-          <div class="text-xs font-semibold text-stone-700 uppercase tracking-wider mb-2">
+        <!-- Included List (Compact) -->
+        <div class="mb-4">
+          <div class="text-[10px] font-bold text-stone-700 uppercase tracking-wider mb-1.5">
             ${dict.pkgIncludedTitle}
           </div>
-          <ul class="space-y-1.5 text-xs text-stone-600">
+          <ul class="space-y-1 text-[11px] text-stone-600">
             ${(isKm ? pkg.includedKm : pkg.includedEn).map(inc => `
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-emerald-600 mr-2 text-sm"></i>
-                <span>${inc}</span>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-emerald-600 mr-1.5 text-xs mt-0.5 shrink-0"></i>
+                <span class="leading-tight">${inc}</span>
               </li>
             `).join("")}
           </ul>
@@ -559,7 +559,7 @@ function renderPackages() {
         href="https://t.me/kohhancbet" 
         target="_blank" 
         rel="noopener noreferrer"
-        class="w-full text-center py-3 px-4 rounded-xl font-medium text-sm transition-all flex items-center justify-center space-x-2 ${pkg.popular ? 'bg-emerald-800 hover:bg-emerald-900 text-white shadow-md' : 'bg-stone-100 hover:bg-emerald-800 hover:text-white text-stone-800'}"
+        class="w-full text-center py-2.5 px-3 rounded-xl font-semibold text-xs transition-all flex items-center justify-center space-x-1.5 ${pkg.popular ? 'bg-emerald-800 hover:bg-emerald-900 text-white shadow-sm' : 'bg-stone-100 hover:bg-emerald-800 hover:text-white text-stone-800'}"
       >
         <i class="fab fa-telegram-plane"></i>
         <span>${dict.pkgBookBtn}</span>
