@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D6A4F" />
+      <stop offset="100%" stop-color="#1B4332" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#grad)" />
+  <!-- Stylized leaf & river wave -->
+  <path d="M32 12 C44 14 50 26 48 38 C42 36 36 34 30 38 C28 32 30 20 32 12 Z" fill="#D4A373" />
+  <path d="M14 44 C22 40 28 48 38 44 C44 42 50 44 54 46 C48 52 38 52 30 48 C22 52 16 48 14 44 Z" fill="#52B788" />
+  <circle cx="24" cy="24" r="3" fill="#FEFAE0" />
+</svg>
