@@ -148,10 +148,14 @@ body.lang-en {
   pointer-events: auto;
 }
 
-/* Mobile floating action bar padding */
+/* Mobile floating action bar spacing & safe area support */
 @media (max-width: 768px) {
   body {
-    padding-bottom: 70px;
+    padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+  }
+  
+  .mobile-action-bar {
+    padding-bottom: max(0.625rem, calc(0.5rem + env(safe-area-inset-bottom, 0px)));
   }
 }
 

@@ -166,7 +166,7 @@
   </header>
 
   <!-- ================= HERO SECTION ================= -->
-  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  <section id="hero" class="relative min-h-screen flex flex-col justify-between pt-28 sm:pt-32 lg:pt-36 pb-8 sm:pb-12 overflow-hidden">
     <!-- Full-screen Dynamic Hero Background Image -->
     <div class="absolute inset-0 z-0">
       <img src="images_web/IMG_20260109_134455_304.webp" alt="Koh Han Mekong Sunset and River Beach"
@@ -176,8 +176,8 @@
       <div class="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/30"></div>
     </div>
 
-    <!-- Hero Content -->
-    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white pt-24 pb-48 sm:pt-28 sm:pb-36 lg:py-32">
+    <!-- Hero Content (Centered with my-auto) -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white my-auto py-4 sm:py-8">
 
       <!-- Ecotourism Badge -->
       <div
@@ -192,21 +192,21 @@
       </h1>
 
       <!-- Short Ramsar Sub-headline -->
-      <p class="text-base sm:text-xl lg:text-2xl text-emerald-50/90 max-w-3xl mx-auto font-normal mb-10 leading-relaxed drop-shadow"
+      <p class="text-base sm:text-xl lg:text-2xl text-emerald-50/90 max-w-3xl mx-auto font-normal mb-8 sm:mb-10 leading-relaxed drop-shadow"
         data-i18n="heroSubtitle">
         តំបន់ដីសើមរ៉ាមសារ ខេត្តស្ទឹងត្រែង • ឋានសួគ៌ធម្មជាតិព្រៃលិចទឹកកណ្ដាលដងទន្លេមេគង្គ ឆ្នេរខ្សាច់កោះដ៏ស្ងប់ស្ងាត់
         និងបដិសណ្ឋារកិច្ចសហគមន៍
       </p>
 
       <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 max-w-md sm:max-w-none mx-auto">
         <a href="#about"
-          class="w-full sm:w-auto px-8 py-4 rounded-full bg-amber-500 hover:bg-amber-400 text-emerald-950 font-bold text-base transition-all shadow-lg hover:shadow-amber-500/30 hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+          class="w-full sm:w-auto px-8 py-3.5 sm:py-4 rounded-full bg-amber-500 hover:bg-amber-400 text-emerald-950 font-bold text-base transition-all shadow-lg hover:shadow-amber-500/30 hover:-translate-y-0.5 flex items-center justify-center space-x-2">
           <span data-i18n="heroCtaLearn">ស្វែងយល់បន្ថែម</span>
           <i class="fas fa-arrow-down text-sm"></i>
         </a>
         <a href="https://t.me/kohhancbet" target="_blank" rel="noopener noreferrer"
-          class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/30 text-white font-semibold text-base transition-all hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+          class="w-full sm:w-auto px-8 py-3.5 sm:py-4 rounded-full bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/30 text-white font-semibold text-base transition-all hover:-translate-y-0.5 flex items-center justify-center space-x-2">
           <i class="fab fa-telegram-plane text-amber-300"></i>
           <span data-i18n="heroCtaBook">ទាក់ទងកក់ដំណើរកម្សាន្ត</span>
         </a>
@@ -214,10 +214,10 @@
 
     </div>
 
-    <!-- Floating Highlight Quick Facts Bar -->
-    <div class="absolute bottom-4 sm:bottom-6 left-0 right-0 z-10 px-3 sm:px-4">
+    <!-- Highlight Quick Facts Bar (Natural Document Flow, Never Overlaps) -->
+    <div class="relative z-10 w-full max-w-6xl mx-auto px-3 sm:px-4 mt-6 sm:mt-8 lg:mt-10">
       <div
-        class="max-w-6xl mx-auto bg-emerald-900/85 backdrop-blur-lg border border-white/15 rounded-2xl p-3 sm:p-5 shadow-2xl">
+        class="bg-emerald-900/85 backdrop-blur-lg border border-white/15 rounded-2xl p-3 sm:p-5 shadow-2xl">
         <div
           class="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 md:divide-x md:divide-white/10 text-center">
 
@@ -810,7 +810,7 @@
       </section>
 
       <!-- ================= CONTACT & LOCATION (FOOTER) ================= -->
-      <footer id="contact" class="bg-emerald-950 text-white relative pt-20 pb-28 sm:pb-20 border-t border-white/10">
+      <footer id="contact" class="bg-emerald-950 text-white relative pt-20 pb-36 sm:pb-24 border-t border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <!-- Top Banner CTA -->
@@ -1017,7 +1017,7 @@
 
       <!-- ================= FLOATING MOBILE ACTION BAR ================= -->
       <div
-        class="fixed bottom-0 left-0 right-0 z-40 bg-emerald-950/95 backdrop-blur-lg border-t border-white/15 py-2.5 px-4 md:hidden shadow-2xl">
+        class="mobile-action-bar fixed bottom-0 left-0 right-0 z-40 bg-emerald-950/95 backdrop-blur-lg border-t border-white/15 py-2.5 px-4 md:hidden shadow-2xl">
         <div class="grid grid-cols-4 gap-2 text-center text-white">
           <a href="tel:092205456"
             class="flex flex-col items-center justify-center py-1 rounded-xl hover:bg-white/10 text-amber-400">
@@ -1044,7 +1044,7 @@
 
       <!-- ================= BACK TO TOP BUTTON ================= -->
       <button id="backToTopBtn"
-        class="fixed bottom-20 md:bottom-8 right-6 z-40 w-11 h-11 rounded-full bg-emerald-800 hover:bg-emerald-700 text-white shadow-xl flex items-center justify-center transition-all opacity-0 pointer-events-none hover:-translate-y-1"
+        class="fixed bottom-24 md:bottom-8 right-6 z-40 w-11 h-11 rounded-full bg-emerald-800 hover:bg-emerald-700 text-white shadow-xl flex items-center justify-center transition-all opacity-0 pointer-events-none hover:-translate-y-1"
         aria-label="Back to top">
         <i class="fas fa-arrow-up text-sm"></i>
       </button>
