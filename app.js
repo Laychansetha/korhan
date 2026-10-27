@@ -434,10 +434,14 @@ function applyLanguage() {
     }
   });
 
-  // Update Toggle Button Label
+  // Update Toggle Button Labels
   const langLabel = document.getElementById("langToggleLabel");
   if (langLabel) {
     langLabel.textContent = currentLang === "km" ? "English" : "ភាសាខ្មែរ";
+  }
+  const langLabelMobile = document.getElementById("langToggleLabelMobile");
+  if (langLabelMobile) {
+    langLabelMobile.textContent = currentLang === "km" ? "EN" : "ខ្មែរ";
   }
 
   // Re-render dynamic components
@@ -490,7 +494,7 @@ function renderDestinations() {
   `).join("");
 }
 
-// Render Tour Packages with exact pricing (Compact single-row layout)
+// Render Tour Packages with exact pricing (Mobile: single column, Desktop: compact single row)
 function renderPackages() {
   const container = document.getElementById("packagesContainer");
   if (!container) return;
@@ -499,55 +503,56 @@ function renderPackages() {
   const dict = i18n[currentLang];
 
   container.innerHTML = packagesData.map(pkg => `
-    <div class="min-w-[270px] sm:min-w-[285px] lg:min-w-0 flex-shrink-0 snap-start bg-white rounded-2xl p-4 sm:p-5 shadow-sm hover:shadow-xl border ${pkg.popular ? 'border-emerald-600 ring-2 ring-emerald-500/20' : 'border-stone-200/80'} relative flex flex-col justify-between transition-all duration-300 hover:-translate-y-1">
+    <div class="w-full bg-white rounded-2xl p-5 lg:p-4 shadow-sm hover:shadow-xl border ${pkg.popular ? 'border-emerald-600 ring-2 ring-emerald-500/20' : 'border-stone-200/80'} relative flex flex-col justify-between transition-all duration-300 hover:-translate-y-1">
       ${pkg.popular ? `
-        <div class="absolute -top-3 right-4 bg-gradient-to-r from-emerald-700 to-green-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm uppercase tracking-wider">
-          ${isKm ? 'ពេញនិយមបំផុត' : 'Popular'}
+        <div class="absolute -top-3 right-4 sm:right-5 bg-gradient-to-r from-emerald-700 to-green-600 text-white text-[11px] font-bold px-3 py-0.5 rounded-full shadow-sm uppercase tracking-wider flex items-center space-x-1">
+          <i class="fas fa-star text-[9px] text-amber-300"></i>
+          <span>${isKm ? 'ពេញនិយមបំផុត' : 'Popular'}</span>
         </div>
       ` : ''}
 
       <div>
-        <div class="flex items-center justify-between mb-2">
-          <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/80">
-            <i class="far fa-clock mr-1 text-[10px]"></i> ${isKm ? pkg.durationKm : pkg.durationEn}
+        <div class="flex items-center justify-between mb-2.5">
+          <span class="text-xs lg:text-[11px] font-bold px-3 py-1 lg:px-2.5 lg:py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200/80 inline-flex items-center">
+            <i class="far fa-clock mr-1.5 text-emerald-600 text-xs lg:text-[10px]"></i> ${isKm ? pkg.durationKm : pkg.durationEn}
           </span>
         </div>
 
-        <h3 class="text-base font-bold text-stone-900 mb-1.5 leading-snug">
+        <h3 class="text-lg lg:text-base font-extrabold text-stone-900 mb-2 leading-snug">
           ${isKm ? pkg.titleKm : pkg.titleEn}
         </h3>
         
-        <p class="text-[11px] text-stone-500 mb-3.5 leading-relaxed line-clamp-2">
+        <p class="text-xs sm:text-sm lg:text-[11px] text-stone-600 mb-4 leading-relaxed lg:line-clamp-2">
           ${isKm ? pkg.summaryKm : pkg.summaryEn}
         </p>
 
-        <!-- Pricing Tier Box (Compact) -->
-        <div class="bg-stone-50 rounded-xl p-3 mb-3.5 border border-stone-200/60">
-          <div class="text-[10px] font-bold text-stone-500 uppercase tracking-wider mb-1.5">
+        <!-- Pricing Tier Box -->
+        <div class="bg-stone-50 rounded-xl p-3.5 lg:p-3 mb-4 border border-stone-200/60">
+          <div class="text-xs lg:text-[10px] font-bold text-stone-500 uppercase tracking-wider mb-2 lg:mb-1.5">
             ${isKm ? 'តម្លៃតាមចំនួនសមាជិក' : 'Group Rates'}
           </div>
-          <div class="space-y-1">
+          <div class="space-y-1.5 lg:space-y-1">
             ${pkg.pricing.map(tier => `
-              <div class="flex items-center justify-between text-xs py-0.5 border-b border-stone-200/40 last:border-none">
+              <div class="flex items-center justify-between text-xs sm:text-sm lg:text-xs py-1.5 lg:py-0.5 border-b border-stone-200/40 last:border-none">
                 <span class="text-stone-700 font-medium">${isKm ? tier.rangeKm : tier.rangeEn}</span>
-                <span class="font-bold text-emerald-900 text-xs">
-                  ${tier.price} <span class="text-[10px] font-normal text-stone-500">${isKm ? '/' + tier.unitKm : '/' + tier.unitEn}</span>
+                <span class="font-bold text-emerald-900 text-xs sm:text-sm lg:text-xs">
+                  ${tier.price} <span class="text-[11px] lg:text-[10px] font-normal text-stone-500">${isKm ? '/' + tier.unitKm : '/' + tier.unitEn}</span>
                 </span>
               </div>
             `).join("")}
           </div>
         </div>
 
-        <!-- Included List (Compact) -->
-        <div class="mb-4">
-          <div class="text-[10px] font-bold text-stone-700 uppercase tracking-wider mb-1.5">
+        <!-- Included List -->
+        <div class="mb-5 lg:mb-4">
+          <div class="text-xs lg:text-[10px] font-bold text-stone-700 uppercase tracking-wider mb-2 lg:mb-1.5">
             ${dict.pkgIncludedTitle}
           </div>
-          <ul class="space-y-1 text-[11px] text-stone-600">
+          <ul class="space-y-1.5 lg:space-y-1 text-xs sm:text-sm lg:text-[11px] text-stone-600">
             ${(isKm ? pkg.includedKm : pkg.includedEn).map(inc => `
               <li class="flex items-start">
-                <i class="fas fa-check-circle text-emerald-600 mr-1.5 text-xs mt-0.5 shrink-0"></i>
-                <span class="leading-tight">${inc}</span>
+                <i class="fas fa-check-circle text-emerald-600 mr-2 lg:mr-1.5 text-xs mt-0.5 shrink-0"></i>
+                <span class="leading-relaxed lg:leading-tight">${inc}</span>
               </li>
             `).join("")}
           </ul>
@@ -559,7 +564,7 @@ function renderPackages() {
         href="https://t.me/kohhancbet" 
         target="_blank" 
         rel="noopener noreferrer"
-        class="w-full text-center py-2.5 px-3 rounded-xl font-semibold text-xs transition-all flex items-center justify-center space-x-1.5 ${pkg.popular ? 'bg-emerald-800 hover:bg-emerald-900 text-white shadow-sm' : 'bg-stone-100 hover:bg-emerald-800 hover:text-white text-stone-800'}"
+        class="w-full text-center py-3 lg:py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm lg:text-xs transition-all flex items-center justify-center space-x-1.5 shadow-sm hover:shadow ${pkg.popular ? 'bg-emerald-800 hover:bg-emerald-900 text-white' : 'bg-stone-100 hover:bg-emerald-800 hover:text-white text-stone-800 border border-stone-200'}"
       >
         <i class="fab fa-telegram-plane"></i>
         <span>${dict.pkgBookBtn}</span>
@@ -752,26 +757,30 @@ function openExpLightbox(imgSrc, title, desc) {
       <div class="relative z-10 max-w-5xl w-full mx-4 flex flex-col max-h-[95vh] rounded-3xl overflow-hidden shadow-2xl border border-white/15">
         <!-- Top bar -->
         <div class="flex items-center justify-between px-5 py-3.5 bg-stone-950/90 border-b border-white/10 shrink-0">
-          <span id="expLightboxTitle" class="text-sm font-bold text-amber-300 truncate pr-4"></span>
-          <button id="expLightboxClose" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-colors shrink-0">
+          <span id="expLightboxTitle" class="text-sm sm:text-base font-bold text-amber-300 truncate pr-4"></span>
+          <button id="expLightboxClose" class="w-9 h-9 sm:w-8 sm:h-8 rounded-full bg-white/15 hover:bg-white/25 active:bg-white/30 text-white flex items-center justify-center transition-colors shrink-0" aria-label="Close modal">
             <i class="fas fa-times text-sm"></i>
           </button>
         </div>
         <!-- Image -->
         <div class="flex-1 bg-black flex items-center justify-center overflow-hidden">
-          <img id="expLightboxImg" src="" alt="" class="max-h-[75vh] w-auto max-w-full object-contain" />
+          <img id="expLightboxImg" src="" alt="" class="max-h-[55vh] sm:max-h-[72vh] w-auto max-w-full object-contain" />
         </div>
         <!-- Caption -->
-        <div class="px-6 py-4 bg-stone-950 shrink-0">
+        <div class="px-5 py-3.5 sm:px-6 sm:py-4 bg-stone-950 shrink-0">
           <p id="expLightboxDesc" class="text-xs sm:text-sm text-stone-300 leading-relaxed"></p>
         </div>
       </div>`;
-    modal.className = 'fixed inset-0 z-[60] flex items-center justify-center transition-opacity duration-300';
+    modal.className = 'fixed inset-0 z-[60] flex items-center justify-center p-3 sm:p-6 transition-opacity duration-300';
     modal.style.display = 'none';
     document.body.appendChild(modal);
 
-    // Close on backdrop click
-    document.getElementById('expLightboxBackdrop').addEventListener('click', closeExpLightbox);
+    // Close on backdrop or outside click
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal || e.target.id === 'expLightboxBackdrop') {
+        closeExpLightbox();
+      }
+    });
     document.getElementById('expLightboxClose').addEventListener('click', closeExpLightbox);
 
     // Close on Escape key

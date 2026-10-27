@@ -154,3 +154,14 @@ body.lang-en {
     padding-bottom: 70px;
   }
 }
+
+/* Prevent horizontal overflow & ensure clean Khmer text wrapping */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, li {
+  overflow-wrap: break-word;
+  word-break: normal;
+}

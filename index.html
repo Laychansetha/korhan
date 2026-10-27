@@ -126,8 +126,9 @@
         <!-- Mobile Menu Hamburger Button -->
         <div class="flex items-center space-x-2 lg:hidden">
           <button id="langToggleBtnMobile" onclick="document.getElementById('langToggleBtn').click()"
-            class="p-2 rounded-lg bg-white/10 text-white text-xs font-bold sm:hidden">
-            <i class="fas fa-globe text-amber-400"></i>
+            class="flex items-center space-x-1 px-2.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white text-xs font-bold sm:hidden">
+            <i class="fas fa-globe text-amber-400 text-xs"></i>
+            <span id="langToggleLabelMobile">EN</span>
           </button>
           <button id="mobileMenuBtn"
             class="p-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white focus:outline-none"
@@ -176,7 +177,7 @@
     </div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white py-24 sm:py-32">
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white pt-24 pb-48 sm:pt-28 sm:pb-36 lg:py-32">
 
       <!-- Ecotourism Badge -->
       <div
@@ -214,31 +215,30 @@
     </div>
 
     <!-- Floating Highlight Quick Facts Bar -->
-    <div class="absolute bottom-6 left-0 right-0 z-10 px-4">
+    <div class="absolute bottom-4 sm:bottom-6 left-0 right-0 z-10 px-3 sm:px-4">
       <div
-        class="max-w-6xl mx-auto bg-emerald-900/80 backdrop-blur-lg border border-white/15 rounded-2xl p-4 sm:p-5 shadow-2xl">
+        class="max-w-6xl mx-auto bg-emerald-900/85 backdrop-blur-lg border border-white/15 rounded-2xl p-3 sm:p-5 shadow-2xl">
         <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-4 divide-y sm:divide-y-0 sm:divide-x divide-white/10 text-center">
+          class="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 md:divide-x md:divide-white/10 text-center">
 
-          <div class="pt-2 sm:pt-0">
-            <div class="text-amber-400 font-bold text-lg sm:text-xl" data-i18n="statDistance">២៤ គ.ម ពីទីរួមខេត្ត</div>
-            <div class="text-xs text-emerald-200/80" data-i18n="statDistanceSub">តាមផ្លូវជាតិលេខ ៧ ឆ្លងស្ពានសេកុង</div>
+          <div class="p-2 sm:p-0 rounded-xl bg-white/5 sm:bg-transparent">
+            <div class="text-amber-400 font-bold text-base sm:text-xl" data-i18n="statDistance">២៤ គ.ម ពីទីរួមខេត្ត</div>
+            <div class="text-[11px] sm:text-xs text-emerald-200/80 leading-tight" data-i18n="statDistanceSub">តាមផ្លូវជាតិលេខ ៧ ឆ្លងស្ពានសេកុង</div>
           </div>
 
-          <div class="pt-2 sm:pt-0 sm:pl-4">
-            <div class="text-amber-400 font-bold text-lg sm:text-xl" data-i18n="statRamsar">តំបន់ដីសើមរ៉ាមសារ</div>
-            <div class="text-xs text-emerald-200/80" data-i18n="statRamsarSub">ប្រព័ន្ធអេកូឡូស៊ីព្រៃលិចទឹកទន្លេមេគង្គ
-            </div>
+          <div class="p-2 sm:p-0 rounded-xl bg-white/5 sm:bg-transparent md:pl-4">
+            <div class="text-amber-400 font-bold text-base sm:text-xl" data-i18n="statRamsar">តំបន់ដីសើមរ៉ាមសារ</div>
+            <div class="text-[11px] sm:text-xs text-emerald-200/80 leading-tight" data-i18n="statRamsarSub">ប្រព័ន្ធអេកូឡូស៊ីព្រៃលិចទឹកទន្លេមេគង្គ</div>
           </div>
 
-          <div class="pt-2 sm:pt-0 sm:pl-4">
-            <div class="text-amber-400 font-bold text-lg sm:text-xl" data-i18n="statEst">បង្កើតតាំងពីឆ្នាំ ២០១៨</div>
-            <div class="text-xs text-emerald-200/80" data-i18n="statEstSub">គ្រប់គ្រងនិងបម្រើផ្ទាល់ដោយសហគមន៍</div>
+          <div class="p-2 sm:p-0 rounded-xl bg-white/5 sm:bg-transparent md:pl-4">
+            <div class="text-amber-400 font-bold text-base sm:text-xl" data-i18n="statEst">បង្កើតតាំងពីឆ្នាំ ២០១៨</div>
+            <div class="text-[11px] sm:text-xs text-emerald-200/80 leading-tight" data-i18n="statEstSub">គ្រប់គ្រងនិងបម្រើផ្ទាល់ដោយសហគមន៍</div>
           </div>
 
-          <div class="pt-2 sm:pt-0 sm:pl-4">
-            <div class="text-amber-400 font-bold text-lg sm:text-xl" data-i18n="statSpots">៩ ទីតាំងសំខាន់ៗ</div>
-            <div class="text-xs text-emerald-200/80" data-i18n="statSpotsSub">ព្រៃលិចទឹក ឆ្នេរខ្សាច់ និងវប្បធម៌</div>
+          <div class="p-2 sm:p-0 rounded-xl bg-white/5 sm:bg-transparent md:pl-4">
+            <div class="text-amber-400 font-bold text-base sm:text-xl" data-i18n="statSpots">៩ ទីតាំងសំខាន់ៗ</div>
+            <div class="text-[11px] sm:text-xs text-emerald-200/80 leading-tight" data-i18n="statSpotsSub">ព្រៃលិចទឹក ឆ្នេរខ្សាច់ និងវប្បធម៌</div>
           </div>
 
         </div>
@@ -383,22 +383,19 @@
         <div
           class="group bg-[#FAF8F5] rounded-3xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col">
           <div class="relative h-64 overflow-hidden cursor-pointer"
-            onclick="openExpLightbox('images_web/20260417_170039.webp','ជិះទូកកាយ៉ាក់ក្នុងព្រៃលិចទឹក','អុំទូកកាយ៉ាក់ផ្សងព្រេងកាត់តាមព្រៃលិចទឹកបុរាណ ជ្រែករវាងមែកធាងឫសឈើធំៗ និងទស្សនាសត្វស្លាបទឹក។')">
+            onclick="openExpLightbox('images_web/20260417_170039.webp','ជិះទូកកាយ៉ាក់ក្នុងព្រៃលិចទឹក','អុំទូកកាយ៉ាក់ផ្សងព្រេងកាត់តាមព្រៃលិចទឹកបុរាណ ជ្រែករវាងមែកធាងឫសឈើធំៗ និងទស្សនាសត្វស្លាបទឹកកម្រនៃដងទន្លេមេគង្គ។')">
             <img src="images_web/20260417_170039.webp" alt="Kayaking in Flooded Forest Koh Han"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-            <!-- Zoom hint overlay -->
-            <div
-              class="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
-              <div
-                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-xl">
-                <i class="fas fa-expand-alt text-emerald-800 text-lg"></i>
-              </div>
-            </div>
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-50 transition-opacity"></div>
             <span
               class="absolute top-4 left-4 bg-emerald-800 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
               <i class="fas fa-water mr-1"></i> កាយ៉ាក់
             </span>
+            <button
+              class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-white/85 hover:bg-white text-stone-800 flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110"
+              title="ពង្រីករូបភាព (View Photo)" aria-label="View photo">
+              <i class="fas fa-expand-alt text-xs"></i>
+            </button>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -412,9 +409,9 @@
               </p>
             </div>
             <div
-              class="mt-4 pt-4 border-t border-stone-200/60 flex items-center text-xs font-semibold text-emerald-800">
+              class="mt-4 pt-3.5 border-t border-stone-200/60 flex items-center text-xs font-semibold text-emerald-800">
+              <i class="fas fa-check-circle text-emerald-600 mr-2 text-[11px] shrink-0"></i>
               <span>សកម្មភាពពេញនិយមបំផុត</span>
-              <i class="fas fa-arrow-right ml-auto"></i>
             </div>
           </div>
         </div>
@@ -423,21 +420,19 @@
         <div
           class="group bg-[#FAF8F5] rounded-3xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col">
           <div class="relative h-64 overflow-hidden cursor-pointer"
-            onclick="openExpLightbox('images_web/IMG_20260109_134452_368.webp','បោះតង់លើកោះខ្សាច់ស្ងប់ស្ងាត់','គេងតង់លើឆ្នេរខ្សាច់សកណ្ដាលទន្លេ អាំងភ្លើងគង គយគន់មេឃផ្កាយរះរាត្រី និងទទួលពន្លឺព្រះអាទិត្យរះ។')">
+            onclick="openExpLightbox('images_web/IMG_20260109_134452_368.webp','បោះតង់លើកោះខ្សាច់ស្ងប់ស្ងាត់','គេងតង់លើឆ្នេរខ្សាច់សកណ្ដាលទន្លេ អាំងភ្លើងគង គយគន់មេឃផ្កាយរះរាត្រី និងទទួលពន្លឺព្រះអាទិត្យរះដ៏ស្រស់បំព្រង។')">
             <img src="images_web/IMG_20260109_134452_368.webp" alt="Beach Camping under the Stars on Island Sandbar"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-            <div
-              class="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
-              <div
-                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-xl">
-                <i class="fas fa-expand-alt text-amber-700 text-lg"></i>
-              </div>
-            </div>
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-50 transition-opacity"></div>
             <span
               class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
               <i class="fas fa-campground mr-1"></i> បោះតង់
             </span>
+            <button
+              class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-white/85 hover:bg-white text-stone-800 flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110"
+              title="ពង្រីករូបភាព (View Photo)" aria-label="View photo">
+              <i class="fas fa-expand-alt text-xs"></i>
+            </button>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -450,9 +445,10 @@
                 និងទទួលពន្លឺព្រះអាទិត្យរះដ៏ស្រស់បំព្រង។
               </p>
             </div>
-            <div class="mt-4 pt-4 border-t border-stone-200/60 flex items-center text-xs font-semibold text-amber-800">
+            <div
+              class="mt-4 pt-3.5 border-t border-stone-200/60 flex items-center text-xs font-semibold text-amber-800">
+              <i class="fas fa-check-circle text-amber-600 mr-2 text-[11px] shrink-0"></i>
               <span>ខ្យល់អាកាសបរិសុទ្ធ គ្មានសំឡេងរំខាន</span>
-              <i class="fas fa-arrow-right ml-auto"></i>
             </div>
           </div>
         </div>
@@ -463,19 +459,17 @@
           <div class="relative h-64 overflow-hidden cursor-pointer"
             onclick="openExpLightbox('images_web/1000022095.webp','ជិះទូកកម្សាន្ត មើលសត្វស្លាប និងស្ទូចត្រី','ជិះទូកឈើសហគមន៍គយគន់ទស្សនីយភាពដងទន្លេ ស្វែងយល់ពីរបៀបរស់នៅ និងរីករាយជាមួយការស្ទូចត្រីលេងកម្សាន្ត។')">
             <img src="images_web/1000022095.webp" alt="Community Wooden Boats for River Tour and Birdwatching"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-            <div
-              class="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
-              <div
-                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-xl">
-                <i class="fas fa-expand-alt text-sky-700 text-lg"></i>
-              </div>
-            </div>
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-50 transition-opacity"></div>
             <span
               class="absolute top-4 left-4 bg-sky-700 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
               <i class="fas fa-ship mr-1"></i> ទូកសហគមន៍
             </span>
+            <button
+              class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-white/85 hover:bg-white text-stone-800 flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110"
+              title="ពង្រីករូបភាព (View Photo)" aria-label="View photo">
+              <i class="fas fa-expand-alt text-xs"></i>
+            </button>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -487,9 +481,9 @@
                 ជិះទូកឈើសហគមន៍គយគន់ទស្សនីយភាពដងទន្លេ ស្វែងយល់ពីរបៀបរស់នៅ និងរីករាយជាមួយការស្ទូចត្រីលេងកម្សាន្ត។
               </p>
             </div>
-            <div class="mt-4 pt-4 border-t border-stone-200/60 flex items-center text-xs font-semibold text-sky-800">
+            <div class="mt-4 pt-3.5 border-t border-stone-200/60 flex items-center text-xs font-semibold text-sky-800">
+              <i class="fas fa-check-circle text-sky-600 mr-2 text-[11px] shrink-0"></i>
               <span>បំពាក់អាវពោងសុវត្ថិភាពស្តង់ដារ</span>
-              <i class="fas fa-arrow-right ml-auto"></i>
             </div>
           </div>
         </div>
@@ -498,21 +492,19 @@
         <div
           class="group bg-[#FAF8F5] rounded-3xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col">
           <div class="relative h-64 overflow-hidden cursor-pointer"
-            onclick="openExpLightbox('images_web/IMG_20260109_134456_028.webp','ផ្ទះស្នាក់សហគមន៍ និងម្ហូបអ្នកកោះ','ស្នាក់នៅក្នុងផ្ទះឈើលំហែប្រពៃណី ស្រូបយកខ្យល់ត្រជាក់បរិសុទ្ធ និងភ្លក្សរសជាតិម្ហូបស្រុកស្រែ។')">
+            onclick="openExpLightbox('images_web/IMG_20260109_134456_028.webp','ផ្ទះស្នាក់សហគមន៍ និងម្ហូបអ្នកកោះ','ស្នាក់នៅក្នុងផ្ទះឈើលំហែប្រពៃណី ស្រូបយកខ្យល់ត្រជាក់បរិសុទ្ធ និងភ្លក្សរសជាតិម្ហូបស្រុកស្រែត្រីទន្លេធម្មជាតិ។')">
             <img src="images_web/IMG_20260109_134456_028.webp" alt="Homestay and Gardens at Koh Han"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-            <div
-              class="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
-              <div
-                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-xl">
-                <i class="fas fa-expand-alt text-emerald-800 text-lg"></i>
-              </div>
-            </div>
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-50 transition-opacity"></div>
             <span
               class="absolute top-4 left-4 bg-emerald-900 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
               <i class="fas fa-home mr-1"></i> ផ្ទះស្នាក់
             </span>
+            <button
+              class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-white/85 hover:bg-white text-stone-800 flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110"
+              title="ពង្រីករូបភាព (View Photo)" aria-label="View photo">
+              <i class="fas fa-expand-alt text-xs"></i>
+            </button>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -526,9 +518,9 @@
               </p>
             </div>
             <div
-              class="mt-4 pt-4 border-t border-stone-200/60 flex items-center text-xs font-semibold text-emerald-800">
+              class="mt-4 pt-3.5 border-t border-stone-200/60 flex items-center text-xs font-semibold text-emerald-800">
+              <i class="fas fa-check-circle text-emerald-600 mr-2 text-[11px] shrink-0"></i>
               <span>ម្ហូបឆ្ងាញ់ធម្មជាតិពីអ្នកភូមិ</span>
-              <i class="fas fa-arrow-right ml-auto"></i>
             </div>
           </div>
         </div>
@@ -537,21 +529,19 @@
         <div
           class="group bg-[#FAF8F5] rounded-3xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col">
           <div class="relative h-64 overflow-hidden cursor-pointer"
-            onclick="openExpLightbox('images_web/20260417_171908.webp','បួងសួងសុំសេចក្តីសុខនៅព្រៃអ្នកតា','ទស្សនាដើមឈើយក្សដែលមានឫសប្រទាក់ក្រឡាអស្ចារ្យ និងអុចធូបបួងសួងសុំសេចក្តីសុខចម្រើន។')">
+            onclick="openExpLightbox('images_web/20260417_171908.webp','បួងសួងសុំសេចក្តីសុខនៅព្រៃអ្នកតា','ទស្សនាដើមឈើយក្សដែលមានឫសប្រទាក់ក្រឡាអស្ចារ្យ និងអុចធូបបួងសួងសុំសេចក្តីសុខចម្រើនតាមជំនឿអ្នកស្រុក។')">
             <img src="images_web/20260417_171908.webp" alt="Preay Nakta Sacred Colossal Tree"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-            <div
-              class="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
-              <div
-                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-xl">
-                <i class="fas fa-expand-alt text-amber-700 text-lg"></i>
-              </div>
-            </div>
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-50 transition-opacity"></div>
             <span
               class="absolute top-4 left-4 bg-amber-700 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
               <i class="fas fa-praying-hands mr-1"></i> ជំនឿ & វប្បធម៌
             </span>
+            <button
+              class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-white/85 hover:bg-white text-stone-800 flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110"
+              title="ពង្រីករូបភាព (View Photo)" aria-label="View photo">
+              <i class="fas fa-expand-alt text-xs"></i>
+            </button>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -563,9 +553,10 @@
                 ទស្សនាដើមឈើយក្សដែលមានឫសប្រទាក់ក្រឡាអស្ចារ្យ និងអុចធូបបួងសួងសុំសេចក្តីសុខចម្រើនតាមជំនឿអ្នកស្រុក។
               </p>
             </div>
-            <div class="mt-4 pt-4 border-t border-stone-200/60 flex items-center text-xs font-semibold text-amber-800">
+            <div
+              class="mt-4 pt-3.5 border-t border-stone-200/60 flex items-center text-xs font-semibold text-amber-800">
+              <i class="fas fa-check-circle text-amber-600 mr-2 text-[11px] shrink-0"></i>
               <span>ទីតាំងសក្ការៈបូជាប្រចាំកោះ</span>
-              <i class="fas fa-arrow-right ml-auto"></i>
             </div>
           </div>
         </div>
@@ -574,21 +565,19 @@
         <div
           class="group bg-[#FAF8F5] rounded-3xl overflow-hidden border border-stone-200/80 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col">
           <div class="relative h-64 overflow-hidden cursor-pointer"
-            onclick="openExpLightbox('images_web/IMG_20250518_065132_199.webp','ផ្ទាំងថ្មកំបោរស និងឡបុរាណ','ទស្សនាផ្ទាំងថ្មកំបោរពណ៌សក្បុសកណ្តាលទឹករលក និងស្វែងយល់ពីស្លាកស្នាមប្រវត្តិសាស្ត្រ។')">
+            onclick="openExpLightbox('images_web/IMG_20250518_065132_199.webp','ផ្ទាំងថ្មកំបោរស និងឡបុរាណ','ទស្សនាផ្ទាំងថ្មកំបោរពណ៌សក្បុសកណ្តាលទឹករលក និងស្វែងយល់ពីស្លាកស្នាមប្រវត្តិសាស្ត្រនៃឡបុរាណ។')">
             <img src="images_web/IMG_20250518_065132_199.webp" alt="White Limestone Formations and Ancient Kilns"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-            <div
-              class="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
-              <div
-                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-12 h-12 rounded-full bg-white/90 flex items-center justify-center shadow-xl">
-                <i class="fas fa-expand-alt text-stone-700 text-lg"></i>
-              </div>
-            </div>
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-70 group-hover:opacity-50 transition-opacity"></div>
             <span
               class="absolute top-4 left-4 bg-stone-700 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
               <i class="fas fa-mountain mr-1"></i> ភូគព្ភសាស្ត្រ
             </span>
+            <button
+              class="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-white/85 hover:bg-white text-stone-800 flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110"
+              title="ពង្រីករូបភាព (View Photo)" aria-label="View photo">
+              <i class="fas fa-expand-alt text-xs"></i>
+            </button>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -600,20 +589,20 @@
                 ទស្សនាផ្ទាំងថ្មកំបោរពណ៌សក្បុសកណ្តាលទឹករលក និងស្វែងយល់ពីស្លាកស្នាមប្រវត្តិសាស្ត្រនៃឡបុរាណ។
               </p>
             </div>
-            <div class="mt-4 pt-4 border-t border-stone-200/60 flex items-center text-xs font-semibold text-stone-800">
+            <div
+              class="mt-4 pt-3.5 border-t border-stone-200/60 flex items-center text-xs font-semibold text-stone-800">
+              <i class="fas fa-check-circle text-stone-600 mr-2 text-[11px] shrink-0"></i>
               <span>កន្លែងថតរូបស្អាតប្លែកភ្នែក</span>
-              <i class="fas fa-arrow-right ml-auto"></i>
             </div>
           </div>
         </div>
 
       </div>
+    </div>
+  </section>
 
-
-
-
-      <!-- ================= DESTINATIONS GALLERY (9 LOCATIONS) ================= -->
-      <section id="destinations" class="py-24 bg-[#F5F2EB] relative">
+  <!-- ================= DESTINATIONS GALLERY (9 LOCATIONS) ================= -->
+  <section id="destinations" class="py-24 bg-[#F5F2EB] relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <!-- Section Header -->
@@ -664,43 +653,43 @@
       </section>
 
       <!-- ================= TOUR PACKAGES & PRICING ================= -->
-      <section id="packages" class="py-24 bg-white relative">
+      <section id="packages" class="py-16 sm:py-24 bg-white relative">
         <div class="max-w-[1540px] mx-auto px-4 sm:px-6 lg:px-8">
 
           <!-- Section Header -->
-          <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
             <div
               class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider mb-3">
               <i class="fas fa-tags text-amber-700"></i>
               <span data-i18n="pkgBadge">តម្លៃ & កញ្ចប់សេវាកម្ម</span>
             </div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 mb-3" data-i18n="pkgTitle">
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-stone-900 mb-3" data-i18n="pkgTitle">
               កញ្ចប់ដំណើរកម្សាន្តពេញនិយម
             </h2>
-            <p class="text-stone-600 text-sm sm:text-base" data-i18n="pkgSub">
+            <p class="text-stone-600 text-sm sm:text-base leading-relaxed" data-i18n="pkgSub">
               តម្លៃច្បាស់លាស់ ផ្អែកលើចំនួនសមាជិក គាំទ្រផ្ទាល់ដល់ជីវភាពសហគមន៍
             </p>
           </div>
 
-          <!-- Single-Row Dynamic Packages Container (5 Cards in 1 Row) -->
+          <!-- Dynamic Packages Container (Desktop: 5 in a row, Mobile: 1 vertical column) -->
           <div id="packagesContainer"
-            class="flex lg:grid lg:grid-cols-5 gap-3.5 sm:gap-4 overflow-x-auto pb-6 pt-3 lg:overflow-visible snap-x snap-mandatory">
+            class="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-6 lg:gap-3 xl:gap-4 max-w-xl md:max-w-2xl lg:max-w-none mx-auto">
             <!-- Rendered dynamically -->
           </div>
 
           <!-- Custom Inquiries CTA Banner -->
-          <div class="mt-10 max-w-3xl mx-auto relative rounded-2xl overflow-hidden shadow-xl">
+          <div class="mt-12 max-w-3xl mx-auto relative rounded-3xl overflow-hidden shadow-xl">
             <!-- Background gradient -->
             <div class="absolute inset-0 bg-gradient-to-br from-emerald-800 via-emerald-700 to-teal-600"></div>
             <!-- Decorative circles -->
             <div class="absolute -top-8 -right-8 w-36 h-36 rounded-full bg-white/5"></div>
             <div class="absolute -bottom-6 -left-6 w-28 h-28 rounded-full bg-amber-400/10"></div>
 
-            <div class="relative z-10 px-6 py-6 flex flex-col sm:flex-row items-center gap-5 text-white">
+            <div class="relative z-10 p-5 sm:p-6 flex flex-col sm:flex-row items-center gap-5 text-white">
 
               <!-- Icon Badge -->
               <div
-                class="shrink-0 w-12 h-12 rounded-xl bg-white/15 border border-white/20 flex items-center justify-center shadow-md">
+                class="shrink-0 w-12 h-12 rounded-2xl bg-white/15 border border-white/20 flex items-center justify-center shadow-md">
                 <i class="fas fa-users text-xl text-amber-300"></i>
               </div>
 
@@ -710,24 +699,24 @@
                   class="inline-block px-2.5 py-0.5 rounded-full bg-amber-400 text-emerald-950 text-[10px] font-extrabold uppercase tracking-wider mb-1">
                   កញ្ចប់ពិសេស
                 </span>
-                <h3 class="text-base font-extrabold text-white mb-1 leading-snug">
+                <h3 class="text-base sm:text-lg font-extrabold text-white mb-1 leading-snug">
                   ត្រូវការរៀបចំដំណើរកម្សាន្តផ្ទាល់ខ្លួន ឬ ក្រុមធំ?
                 </h3>
-                <p class="text-xs text-emerald-100 leading-relaxed">
+                <p class="text-xs sm:text-sm text-emerald-100 leading-relaxed">
                   ពិភាក្សា ឬកែសម្រួលកម្មវិធីតាមតម្រូវការ។
                   <strong class="text-amber-300">តម្លៃអាចចរចាបានសម្រាប់ក្រុមធំ!</strong>
                 </p>
               </div>
 
               <!-- CTA Buttons -->
-              <div class="shrink-0 flex flex-row sm:flex-col gap-2">
+              <div class="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-2.5 w-full sm:w-auto">
                 <a href="https://t.me/kohhancbet" target="_blank" rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center space-x-1.5 px-4 py-2 rounded-lg bg-amber-400 hover:bg-amber-300 text-emerald-950 font-bold text-xs shadow-md transition-all hover:-translate-y-0.5">
+                  class="inline-flex items-center justify-center space-x-1.5 px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-emerald-950 font-bold text-xs shadow-md transition-all hover:-translate-y-0.5 w-full sm:w-auto">
                   <i class="fab fa-telegram-plane"></i>
                   <span>Telegram</span>
                 </a>
                 <a href="tel:092205456"
-                  class="inline-flex items-center justify-center space-x-1.5 px-4 py-2 rounded-lg bg-white/15 hover:bg-white/25 border border-white/30 text-white font-bold text-xs shadow-sm transition-all hover:-translate-y-0.5">
+                  class="inline-flex items-center justify-center space-x-1.5 px-5 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/30 text-white font-bold text-xs shadow-sm transition-all hover:-translate-y-0.5 w-full sm:w-auto">
                   <i class="fas fa-phone-alt"></i>
                   <span>092 205 456</span>
                 </a>
@@ -804,11 +793,11 @@
                 id="kayakMapPreview">
                 <img src="images_web/IMG_20250404_065941_652.webp"
                   alt="Official Koh Han Kayaking and Regional Exploration Map"
-                  class="w-full h-[450px] sm:h-[520px] object-contain bg-emerald-950/5 group-hover:scale-105 transition-transform duration-500" />
+                  class="w-full h-[280px] sm:h-[420px] lg:h-[520px] object-contain bg-emerald-950/5 group-hover:scale-105 transition-transform duration-500" />
                 <div class="absolute inset-0 bg-emerald-950/20 group-hover:bg-transparent transition-colors"></div>
 
                 <div
-                  class="absolute bottom-5 right-5 bg-white/95 backdrop-blur-md text-emerald-950 px-4 py-2 rounded-2xl shadow-lg flex items-center space-x-2 text-xs font-bold">
+                  class="absolute bottom-3 right-3 sm:bottom-5 sm:right-5 bg-white/95 backdrop-blur-md text-emerald-950 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl sm:rounded-2xl shadow-lg flex items-center space-x-1.5 sm:space-x-2 text-[11px] sm:text-xs font-bold">
                   <i class="fas fa-expand text-emerald-700"></i>
                   <span>ពង្រីកផែនទីធំ (Inspect Map)</span>
                 </div>
@@ -911,13 +900,6 @@
                     <span class="font-mono font-semibold text-base">087 547 292</span>
                   </a>
                 </li>
-                <li>
-                  <a href="tel:0963807678"
-                    class="flex items-center space-x-3 text-emerald-100 hover:text-amber-300 transition-colors">
-                    <i class="fas fa-phone-alt text-emerald-400 w-4"></i>
-                    <span class="font-mono font-semibold text-base">096 380 7678</span>
-                  </a>
-                </li>
               </ul>
             </div>
 
@@ -993,22 +975,22 @@
 
           <!-- Modal Image View with Prev/Next buttons -->
           <div
-            class="relative flex-1 bg-black flex items-center justify-center overflow-hidden min-h-[300px] sm:min-h-[460px]">
-            <img id="lightboxImg" src="" alt="" class="max-h-[65vh] w-auto max-w-full object-contain" />
+            class="relative flex-1 bg-black flex items-center justify-center overflow-hidden min-h-[220px] sm:min-h-[440px]">
+            <img id="lightboxImg" src="" alt="" class="max-h-[52vh] sm:max-h-[65vh] w-auto max-w-full object-contain" />
 
             <button id="lightboxPrev"
-              class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/50 hover:bg-white text-white hover:text-black flex items-center justify-center transition-all shadow-lg">
-              <i class="fas fa-chevron-left text-sm"></i>
+              class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/60 hover:bg-white text-white hover:text-black flex items-center justify-center transition-all shadow-lg">
+              <i class="fas fa-chevron-left text-xs sm:text-sm"></i>
             </button>
             <button id="lightboxNext"
-              class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/50 hover:bg-white text-white hover:text-black flex items-center justify-center transition-all shadow-lg">
-              <i class="fas fa-chevron-right text-sm"></i>
+              class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/60 hover:bg-white text-white hover:text-black flex items-center justify-center transition-all shadow-lg">
+              <i class="fas fa-chevron-right text-xs sm:text-sm"></i>
             </button>
           </div>
 
           <!-- Modal Caption -->
-          <div class="p-6 bg-stone-950 text-white">
-            <h3 id="lightboxTitle" class="text-lg sm:text-xl font-bold text-amber-300 mb-1"></h3>
+          <div class="p-4 sm:p-6 bg-stone-950 text-white shrink-0">
+            <h3 id="lightboxTitle" class="text-base sm:text-xl font-bold text-amber-300 mb-1"></h3>
             <p id="lightboxDesc" class="text-xs sm:text-sm text-stone-300 leading-relaxed"></p>
           </div>
         </div>
