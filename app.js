@@ -19,7 +19,7 @@ const i18n = {
     // Hero
     heroTag: "អេកូទេសចរណ៍សហគមន៍ • ខេត្តស្ទឹងត្រែង",
     heroTitle: "ស្វាគមន៍មកកាន់រមណីយដ្ឋានកោះហាន",
-    heroSubtitle: "តំបន់ដីសើមរ៉ាមសារ ខេត្តស្ទឹងត្រែង ឋានសួគ៌ធម្មជាតិព្រៃលិចទឹកកណ្ដាលដងទន្លេមេគង្គ ឆ្នេរខ្សាច់កោះដ៏ស្ងប់ស្ងាត់ និងបដិសណ្ឋារកិច្ចសហគមន៍",
+    heroSubtitle: "កោះហានជាតំបន់ដីកោះ ស្ថិតក្នុងតំបន់ដីសើម-រ៉ាមសារ ខេត្តស្ទឹងត្រែង ជាឋានសួរជីវចំរុះធម្មជាតិព្រៃលិចទឹកកណ្ដាលដងទន្លេមេគង្គ មានឆ្នេរខ្សាច់កោះដ៏ស្រស់ស្អាត បរិយាកាសស្ងប់ស្ងាត និងបដិសណ្ឋារកិច្ចដោយសហគមន៍។",
     heroCtaLearn: "ស្វែងយល់បន្ថែម",
     heroCtaBook: "ទាក់ទងកក់ដំណើរកម្សាន្ត",
 
@@ -36,9 +36,9 @@ const i18n = {
     // About Section
     aboutBadge: "អំពីសហគមន៍យើង",
     aboutTitle: "ធម្មជាតិពិត បទពិសោធន៍ពិត គាំទ្រសហគមន៍ពិតប្រាកដ",
-    aboutPara1: "រមណីយដ្ឋានកោះហាន ស្ថិតនៅក្នុងសង្កាត់សាមគ្គី ជាប់ព្រំប្រទល់ស្រុកបុរីអូរស្វាយសែនជ័យ។ លោកអ្នកអាចធ្វើដំណើរឆ្លងកាត់ស្ពានសេកុង តាមបណ្តោយផ្លូវជាតិលេខ ៧ ចេញពីទីរួមខេត្តស្ទឹងត្រែង ឆ្ពោះទៅកាន់ព្រំប្រទល់ប្រទេសឡាវ ដែលមានចម្ងាយប្រហែល ២៤ គីឡូម៉ែត្រ រហូតដល់កំពង់ទូករមណីយដ្ឋានកោះហាន។",
+    aboutPara1: "រមណីយដ្ឋានកោះហាន ស្ថិតនៅក្នុងសង្កាត់សាមគ្គី ជាប់ព្រំប្រទល់ស្រុកបុរីអូរស្វាយសែនជ័យ។ លោកអ្នកធ្វើដំណើរឆ្លងកាត់ស្ពានសេកុង តាមបណ្តោយផ្លូវជាតិលេខ ៧ ចេញពីទីរួមខេត្តស្ទឹងត្រែង ឆ្ពោះទៅកាន់ព្រំប្រទល់ប្រទេសឡាវ ត្រង់ចំនុចបង្គោលគីឡូម៉ែត្រលេខ 485 ដែលមានចម្ងាយប្រហែល ២០ គីឡូម៉ែត្រ ដល់ចំនុចផ្លូវបត់ចូលកោះហាន រួចបត់ស្ដាំចូលប្រហែល៣Km ដល់ចំណតទូករមណីយដ្ឋានកោះហាន។",
     aboutPara2: "នៅទីនេះ យើងខ្ញុំមានចំណតរថយន្តធំទូលាយ រោងទទួលភ្ញៀវដ៏កក់ក្តៅ និងសួនលំហែបៃតង ព្រមទាំងមានផ្ទះស្នាក់ ឬផ្ទះលំហែឈើប្រណីតនៅក្បែរមាត់ទឹក ទល់មុខព្រៃលិចទឹកកោះហាន ប្រកបដោយបរិយាកាសខ្យល់បរិសុទ្ធ ស្ថិតក្នុងតំបន់ដីសើមរ៉ាមសារ ខេត្តស្ទឹងត្រែង។",
-    aboutPara3: "រមណីយដ្ឋាននេះត្រូវបានបង្កើតឡើងតាំងពីឆ្នាំ ២០១៨ ក្នុងគោលបំណងគាំទ្រផ្ទាល់ដល់សេវាកម្មសហគមន៍ និងបងប្អូនប្រជាពលរដ្ឋរស់នៅលើកោះក្នុងតំបន់កោះហាន ឲ្យមានជីវភាពប្រសើរឡើង តាមរយៈការបម្រើសេវាទេសចរណ៍ប្រកបដោយគុណភាព សុវត្ថិភាព និងការទទួលខុសត្រូវខ្ពស់។",
+    aboutPara3: "រមណីយដ្ឋាននេះត្រូវបានបង្កើតឡើងតាំងពីឆ្នាំ ២០១៨ ក្នុងគោលបំណងជួយគាំទ្រផ្ទាល់ដល់សេវាកម្មសហគមន៍ និងបងប្អូនប្រជាពលរដ្ឋរស់នៅលើកោះក្នុងតំបន់កោះហាន ឲ្យមានជីវភាពប្រសើរឡើង តាមរយៈការបម្រើសេវាទេសចរណ៍ប្រកបដោយគុណភាព សុវត្ថិភាព និងការទទួលខុសត្រូវខ្ពស់។ ក្នុងនោះយើងក៏បានជួយគាំទ្រសហគន៍នេសាទលើការការពារ និងអភិរក្សអន្លង់ត្រីមេពូជដ៏កម្រផងដែរ។",
     featParking: "ចំណតរថយន្តធំទូលាយ មានសុវត្ថិភាព",
     featReception: "រោងទទួលភ្ញៀវ និងផ្ដល់ព័ត៌មាន",
     featStays: "ផ្ទះស្នាក់មាត់ទឹក និងទីធ្លាលំហែ",
@@ -47,7 +47,9 @@ const i18n = {
     // Experiences
     expBadge: "សកម្មភាពពិសេស",
     expTitle: "បទពិសោធន៍ដែលមិនអាចបំភ្លេចបាននៅកោះហាន",
-    expSub: "រីករាយជាមួយសកម្មភាពចម្រុះ ធម្មជាតិដងទន្លេមេគង្គ ផ្ដល់ភាពស្រស់ស្រាយ និងភាពស្ងប់ស្ងាត់",
+    expSub: "បទពិសោធន៍ល្អៗជាមួយសកម្មភាពជាច្រើននៅកោះហាន ដែលយើងអាចធ្វើបានមានដូចខាងក្រោម៖",
+    expSectionHint: "ចុចលើកាត ឬរូបភាពដើម្បីមើលរូបថត និងព័ត៌មានលម្អិត",
+    expCardCta: "ចុចមើលរូបភាព & ព័ត៌មានលម្អិត",
     exp1Title: "ជិះទូកកាយ៉ាក់ក្នុងព្រៃលិចទឹក",
     exp1Desc: "អុំទូកកាយ៉ាក់ផ្សងព្រេងកាត់តាមព្រៃលិចទឹកបុរាណ ជ្រែករវាងមែកធាងឫសឈើធំៗ និងទស្សនាសត្វស្លាបទឹកកម្រនៃដងទន្លេមេគង្គ។",
     exp2Title: "បោះតង់លើកោះខ្សាច់ស្ងប់ស្ងាត់",
@@ -129,9 +131,9 @@ const i18n = {
     // About Section
     aboutBadge: "About Our Community",
     aboutTitle: "Pure Nature, Authentic Memories, Real Community Support",
-    aboutPara1: "Koh Han Community Resort is located in Samaki Sangkat, bordering Borei O'Svay Sen Chey District. You can travel across the Sekong Bridge along National Road 7 from Stung Treng provincial town heading towards the Laos border (approximately 24 km) directly to the Koh Han boat pier.",
+    aboutPara1: "Koh Han Community Resort is located in Samaki Sangkat, bordering Borei O'Svay Sen Chey District. You can travel across the Sekong Bridge along National Road 7 from Stung Treng provincial town heading towards the Laos border to milestone km 485 (approximately 20 km), turn right into the Koh Han access road for about 3 km to reach the Koh Han resort boat pier.",
     aboutPara2: "At our resort base, we provide spacious parking, a cozy guest reception pavilion, leisure gardens, and waterfront wooden homestays directly facing the flooded forest of Koh Han with refreshing river breezes within the protected Stung Treng Ramsar wetland.",
-    aboutPara3: "Established in 2018, this community-based ecotourism initiative was created to directly support local island villagers, enhancing their livelihoods through sustainable, high-quality, and deeply responsible hospitality.",
+    aboutPara3: "Established in 2018, this community-based ecotourism initiative was created to directly support local island villagers, enhancing their livelihoods through sustainable, high-quality, and deeply responsible hospitality. We also support the local fishery community in protecting and conserving rare broodstock fish deep pools.",
     featParking: "Spacious & secure vehicle parking",
     featReception: "Guest reception & orientation pavilion",
     featStays: "Waterfront homestays & gardens",
@@ -141,6 +143,8 @@ const i18n = {
     expBadge: "Highlights",
     expTitle: "Unforgettable Experiences at Koh Han",
     expSub: "Immerse yourself in Mekong wilderness adventures, peaceful river tranquility, and warm local hospitality.",
+    expSectionHint: "Click any card or photo to explore more photos and details",
+    expCardCta: "Click to explore photos & details",
     exp1Title: "Flooded Forest Kayaking",
     exp1Desc: "Paddle through ancient flooded tree canopies, navigating surreal giant root tangles while spotting rare Mekong waterfowl.",
     exp2Title: "Sandbar Beach Camping",
@@ -192,6 +196,140 @@ const i18n = {
     footerSub: "Community-Based Ecotourism in the Stung Treng Ramsar Wetland, Cambodia."
   }
 };
+
+// ============================================================
+// 6 Experiences Data (Supports Multiple Photos & Full Descriptions)
+// ============================================================
+const experiencesData = [
+  {
+    id: 1,
+    titleKm: "ជិះទូកកាយ៉ាក់ក្នុងព្រៃលិចទឹក",
+    titleEn: "Flooded Forest Kayaking",
+    shortDescKm: "អុំទូកកាយ៉ាក់ផ្សងព្រេងកាត់តាមព្រៃលិចទឹកបុរាណ ជ្រែករវាងមែកធាងឫសឈើធំៗ និងទស្សនាសត្វស្លាបទឹកកម្រនៃដងទន្លេមេគង្គ។",
+    shortDescEn: "Paddle through ancient flooded tree canopies, navigating surreal giant root tangles while spotting rare Mekong waterfowl.",
+    fullDescKm: `កម្មវិធីអុំកាយ៉ាក់ក្នុងព្រៃលិចទឹកតាមបណ្ដោយដងទន្លេមេគង្គ ភ្ញៀវអាច៖
+o	ទស្សនាព្រៃលិចទឹកតំបន់រ៉ាមសារ
+o	មើលសត្វស្លាបទឹកកម្រនៃដងទន្លេមេគង្គ 
+o	លេងកម្សាន្តតាមកោះតូចៗ និង
+o	ហែលទឹកលេងកម្សាន្តនៅក្នុងព្រៃលិចទឹក
+o	ទស្សនាឬសឈើដ៏ធំអស្ចារ្យដែលមានអាយុកាលរាប់រយឆ្នាំដែលឈរនៅក្នុងទឹកដ៏ស្រស់ស្អាត 
+o	ថតរូបអនុស្សាវរីយ៍ ព្រមទាំងទទួលបានបទពិសោធន៍ដ៏ល្អជាមួយដំណើរកម្សាន្តផងដែរ។ សកម្មភាពជិះកាយ៉ាកយើងអាចរៀបចំបានច្រើនកម្មវិធីដូចជា កម្មវិធីរយៈពេលកន្លះថ្ងៃ ១ថ្ងៃពេញ និង១យប់ ២ថ្ងៃ ឬ២យប់៣ថ្ងៃ។`,
+    fullDescEn: `Kayaking adventures through the Mekong flooded forest Ramsar wetland allow guests to:
+• Explore the pristine Ramsar wetland flooded forest
+• Spot rare Mekong waterfowl and riverine biodiversity
+• Tour and relax on scenic small river islands
+• Swim and refresh in the flooded forest waters
+• Marvel at magnificent centuries-old giant tree roots standing tall in the water
+• Capture memorable photos and gain great eco-adventure experiences.
+
+Kayaking activities can be arranged for multiple itineraries including half-day, full-day, 1 night / 2 days, or 2 nights / 3 days.`,
+    images: [
+      "images_web/20260417_170039.webp"
+    ]
+  },
+  {
+    id: 2,
+    titleKm: "បោះតង់លើកោះខ្សាច់ស្ងប់ស្ងាត់",
+    titleEn: "Sandbar Beach Camping",
+    shortDescKm: "គេងតង់លើឆ្នេរខ្សាច់សកណ្ដាលទន្លេ អាំងភ្លើងគង គយគន់មេឃផ្កាយរះរាត្រី និងទទួលពន្លឺព្រះអាទិត្យរះដ៏ស្រស់បំព្រង។",
+    shortDescEn: "Sleep under starlit skies on pristine river sandbars with cozy campfires, fresh night breezes, and golden sunrises.",
+    fullDescKm: `ដែលបងប្អូនអាចមកកម្សាន្តលេងបោះតង់លើកោះខ្សាច់នឹងមានសកម្មភាពជាច្រើនដូចជា៖
+o	បានទៅទស្សនាសម្រស់ថ្ងៃលិចដ៏ស្រស់ស្អាត់នៅលើកោះពេលថ្ងៃរៀបលិច 
+o	ពេលយប់ដុតត្រីលើភ្នក់ភ្លើង 
+o	ហូបអាហារជុំគ្នាលើកោះ 
+o	បានដុតពោត ឬដំឡុងពេលរាត្រី 
+o	សម្រាកគយគន់ផ្កាយរាប់ពាន់ពេលយប់ជ្រៅ 
+o	ស្ដាប់រឿននិទានពីកោះហាន ព្រមទាំងអាចរៀបចំកម្សាន្តពេលបោះតង់ផងដែរ 
+o	ព្រឹកឡើង ហូបតែ ឬកាហ្វេក្ដៅៗ ទស្សនាថ្ងៃរះពេលព្រលឹម ទាំងនេះជាបទពិសោធន៍ដ៏ល្អដែលមិនអាចបំភ្លេចបាន ជាអនុស្សាវរីយ៍ដ៏ប្លែកសម្រាប់ភ្ញៀវទេសចរមកកម្សាន្តនៅកោះហាន។`,
+    fullDescEn: `Guests camping on the peaceful river sandbars can enjoy a variety of memorable activities:
+• Witness breathtaking golden sunsets over the island in the late afternoon
+• Grill fresh river fish over an open evening campfire
+• Share joyful group dinners on the secluded island
+• Roast fresh corn or sweet potatoes under the night sky
+• Stargaze at thousands of shining stars late into the night
+• Listen to local folklore of Koh Han and enjoy campfire gatherings
+• Savor hot morning tea or coffee while watching the golden sunrise at dawn — creating unforgettable, unique memories at Koh Han.`,
+    images: [
+      "images_web/IMG_20260109_134452_368.webp"
+    ]
+  },
+  {
+    id: 3,
+    titleKm: "ជិះទូកកម្សាន្ត មើលសត្វស្លាប និងស្ទូចត្រី",
+    titleEn: "Boat Cruise, Birdwatching & Fishing",
+    shortDescKm: "ជិះទូកឈើសហគមន៍គយគន់ទស្សនីយភាពដងទន្លេ ស្វែងយល់ពីរបៀបរស់នៅ និងរីករាយជាមួយការស្ទូចត្រីលេងកម្សាន្ត។",
+    shortDescEn: "Cruise on traditional longboats, observe majestic wetland birds, and try recreational fishing alongside community fishermen.",
+    fullDescKm: `កោះហានគឺត្រូវបានទទួលស្វាគមន៍ដោយក្រុមទូកសហគមន៍ដែលមានបទពិសោធន៍ និងជំនាញក្នុងការបើកទូកជូនភ្ញៀវទៅលេងកម្សាន្តទៅតាមកម្មវិធីដែលាមានស្រាប់ដូចជា៖ 
+o	ជិះទូកទស្សនាព្រៃលិចទឹក 
+o	ជិះទូកជុំវិញកោះទស្សនាព្រៃលិចទឹកក្បាល់កោះហាន 
+o	ចុះលេងតាមកោះខ្សាច់ 
+o	ទស្សនាតំបន់ព្រៃជំនឿរបស់អ្នកភូមិរស់នៅលើកោះ (ព្រៃអ្នកតា) 
+o	ទស្សនាឡបុរាណនៅច្រាំងទន្លេលើកោះ 
+o	ទស្សនាព្រៃលិចទឹកកន្ទុយកោះហាន (ថតរូប និងលេទឹកកម្សាន្ត) 
+o	ទស្សនាព្រៃលិចទឹកកោះសំរោង`,
+    fullDescEn: `Koh Han warmly welcomes visitors with an experienced and skilled community boat group ready to guide guests through various tours and itineraries such as:
+• Boat tours exploring the Ramsar flooded forest
+• Cruising around the island to explore the flooded forest at Koh Han head
+• Stopping by scenic river sandbars and beaches
+• Visiting the sacred local spirit forest (Preay Nakta)
+• Exploring historical ancient kilns along the island riverbank
+• Visiting Koh Han tail flooded forest (photography & swimming)
+• Touring Koh Samroung flooded forest`,
+    images: [
+      "images_web/1000022095.webp"
+    ]
+  },
+  {
+    id: 4,
+    titleKm: "ផ្ទះស្នាក់សហគមន៍ និងម្ហូបអ្នកកោះ",
+    titleEn: "Community Homestay & Cuisine",
+    shortDescKm: "ស្នាក់នៅក្នុងផ្ទះឈើលំហែប្រពៃណី ស្រូបយកខ្យល់ត្រជាក់បរិសុទ្ធ និងភ្លក្សរសជាតិម្ហូបស្រុកស្រែត្រីទន្លេធម្មជាតិ។",
+    shortDescEn: "Stay in traditional wooden riverside lodges, breathing crisp river air and savoring home-cooked local fish delicacies.",
+    fullDescKm: `បងប្អូនអាចទៅស្នាក់នៅផ្ទះស្នាក់សហគមន៍លើកោះស្នែង ដែលរៀបចំដោយអ្នកភូមិប្រកបដោយស្នាមញញឹម រួសរាយរាក់ទាក់បំផុត។ 
+o	ផ្ទះស្នាក់សហគមន៍មានរៀបចំជាបន្ទប់គេងដោយឡែក
+o	រៀបចំនៅក្នុងផ្ទះ ឬសំយ៉ាបផ្ទះធំទូលាយដែលមាន ពូក ខ្នើយ ភួយ មុង និងបន្ទប់ទឹកតាមផ្ទះ
+o	មានរៀបចំកម្មវិធីជួបជុំពេលរាត្រី (ដុតដំឡូង ដុតពោត ឬត្រី)`,
+    fullDescEn: `Guests can stay at authentic community homestays on Koh Snaeng, warmly hosted by welcoming local villagers with sincere hospitality:
+• Homestays provide private partitioned bedrooms
+• Accommodations arranged inside the house or spacious covered verandas equipped with mattresses, pillows, blankets, mosquito nets, and clean bathrooms
+• Evening social campfire gatherings (roasting sweet potatoes, fresh corn, or local river fish)`,
+    images: [
+      "images_web/IMG_20260109_134456_028.webp"
+    ]
+  },
+  {
+    id: 5,
+    titleKm: "បួងសួងសុំសេចក្តីសុខនៅព្រៃអ្នកតា",
+    titleEn: "Preay Nakta Sacred Giant Tree",
+    shortDescKm: "ទស្សនាដើមឈើយក្សដែលមានឫសប្រទាក់ក្រឡាអស្ចារ្យ និងអុចធូបបួងសួងសុំសេចក្តីសុខចម្រើនតាមជំនឿអ្នកស្រុក។",
+    shortDescEn: "Visit venerated giant trees with intertwined colossal roots and light incense for peace and good fortune per local belief.",
+    fullDescKm: `បងប្អូនអាចចូលរួមសកម្មភាពនេសាទជាមួយបងប្អូនប្រជានេសាទនៅក្នុងភូមិដែលមានជំនាញ និងបទពិសោធន៍នេសាទត្រីផងដែរ ហើយសកម្មភាពទាំងនោះមានដូចជា៖
+o	ដាក់មង ឬលបជាមួយសហគមន៍
+o	ស្ទូចត្រីជាមួយសហគមន៍
+o	បង់សំណាញ់តាមកោះ និងដាក់សន្ទូច
+o	បណ្ដែតមងជាមួយប្រជានេសាទ`,
+    fullDescEn: `Guests can join traditional fishing activities alongside skilled and experienced local island fishermen:
+• Setting gillnets or traditional fish traps (lop) with community members
+• Recreational and traditional hook-and-line fishing
+• Cast-net fishing along island sandbars and line setting
+• Drift-net fishing along the Mekong River currents`,
+    images: [
+      "images_web/20260417_171908.webp"
+    ]
+  },
+  {
+    id: 6,
+    titleKm: "ផ្ទាំងថ្មកំបោរស និងឡបុរាណ",
+    titleEn: "White Limestone & Ancient Kilns",
+    shortDescKm: "ទស្សនាផ្ទាំងថ្មកំបោរពណ៌សក្បុសកណ្តាលទឹករលក និងស្វែងយល់ពីស្លាកស្នាមប្រវត្តិសាស្ត្រនៃឡបុរាណ។",
+    shortDescEn: "Marvel at shimmering white limestone sculpted by rapids and uncover historical remnants of ancient kilns.",
+    fullDescKm: "បងប្អូនដែលបានមកលេងរមណីយដ្ឋានកោះហានតែងតែចង់សាកស្នាដៃចុងភៅធ្វើម្ហូបអាហារប្រចាំតំបន់បែបខ្មែរ-ឡាវ ដែលមានឱជារសដ៏ឆ្ងុយឆ្ងាញ់ ជាពិសេសត្រីទន្លេមេគង្គធម្មជាតិស្រស់ៗ និងមាន់ធម្មជាតិដែលអ្នកភូមិចិញ្ចឹមលើកោះ ទាំងនេះ",
+    fullDescEn: "Visitors to Koh Han Resort love savoring the delightful flavors of regional Khmer-Lao dishes crafted by local cooks, featuring fresh wild Mekong river fish and free-range chicken raised by island villagers.",
+    images: [
+      "images_web/IMG_20250518_065132_199.webp"
+    ]
+  }
+];
 
 // 9 Key Destinations Data from PDF
 const destinationsData = [
@@ -447,6 +585,10 @@ function applyLanguage() {
   // Re-render dynamic components
   renderDestinations();
   renderPackages();
+  const expModal = document.getElementById("expLightboxModal");
+  if (expModal && expModal.style.display === "flex") {
+    renderExpLightbox();
+  }
 }
 
 // Render 9 Destinations Gallery
@@ -744,9 +886,39 @@ function setupScrollEffects() {
 }
 
 // ============================================================
-// Experience Card Image Lightbox
+// Experience Card Image Lightbox (Supports Multiple Photos & Full Descriptions)
 // ============================================================
-function openExpLightbox(imgSrc, title, desc) {
+let currentExpIdx = -1;
+let currentExpPhotoIdx = 0;
+
+function formatExpDesc(text) {
+  if (!text) return '';
+  const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+  let html = '';
+  let inList = false;
+
+  lines.forEach(line => {
+    // Matches bullets: o, •, -, * followed by tab or spaces
+    const bulletMatch = line.match(/^([o•\-\*])[\s\t]+(.*)$/i);
+    if (bulletMatch) {
+      if (!inList) {
+        html += '<ul class="space-y-2 my-2.5 pl-1">';
+        inList = true;
+      }
+      html += `<li class="flex items-start space-x-2 text-stone-200"><span class="text-amber-400 font-bold shrink-0 mt-0.5">•</span><span class="text-xs sm:text-sm leading-relaxed">${bulletMatch[2]}</span></li>`;
+    } else {
+      if (inList) {
+        html += '</ul>';
+        inList = false;
+      }
+      html += `<p class="text-xs sm:text-sm text-stone-200 leading-relaxed mb-2">${line}</p>`;
+    }
+  });
+  if (inList) html += '</ul>';
+  return html;
+}
+
+function openExpLightbox(target, legacyTitle, legacyDesc) {
   // Create modal if it doesn't exist yet
   let modal = document.getElementById('expLightboxModal');
   if (!modal) {
@@ -754,21 +926,32 @@ function openExpLightbox(imgSrc, title, desc) {
     modal.id = 'expLightboxModal';
     modal.innerHTML = `
       <div id="expLightboxBackdrop" class="absolute inset-0 bg-black/90 backdrop-blur-md"></div>
-      <div class="relative z-10 max-w-5xl w-full mx-4 flex flex-col max-h-[95vh] rounded-3xl overflow-hidden shadow-2xl border border-white/15">
+      <div class="relative z-10 max-w-4xl w-full mx-4 flex flex-col max-h-[92vh] rounded-3xl overflow-hidden shadow-2xl border border-white/15 bg-stone-950">
         <!-- Top bar -->
-        <div class="flex items-center justify-between px-5 py-3.5 bg-stone-950/90 border-b border-white/10 shrink-0">
+        <div class="flex items-center justify-between px-5 py-3.5 bg-stone-950/95 border-b border-white/10 shrink-0">
           <span id="expLightboxTitle" class="text-sm sm:text-base font-bold text-amber-300 truncate pr-4"></span>
           <button id="expLightboxClose" class="w-9 h-9 sm:w-8 sm:h-8 rounded-full bg-white/15 hover:bg-white/25 active:bg-white/30 text-white flex items-center justify-center transition-colors shrink-0" aria-label="Close modal">
             <i class="fas fa-times text-sm"></i>
           </button>
         </div>
-        <!-- Image -->
-        <div class="flex-1 bg-black flex items-center justify-center overflow-hidden">
-          <img id="expLightboxImg" src="" alt="" class="max-h-[55vh] sm:max-h-[72vh] w-auto max-w-full object-contain" />
+        <!-- Image Area with Photo Navigation -->
+        <div class="relative flex-1 bg-black flex items-center justify-center overflow-hidden min-h-[220px] max-h-[48vh] sm:max-h-[56vh]">
+          <img id="expLightboxImg" src="" alt="" class="max-h-full w-auto max-w-full object-contain transition-opacity duration-200 select-none" />
+          
+          <!-- Prev / Next buttons for multiple photos -->
+          <button id="expLightboxPrev" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center border border-white/20 transition-all z-20 shadow-lg cursor-pointer" aria-label="Previous photo">
+            <i class="fas fa-chevron-left text-sm"></i>
+          </button>
+          <button id="expLightboxNext" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center border border-white/20 transition-all z-20 shadow-lg cursor-pointer" aria-label="Next photo">
+            <i class="fas fa-chevron-right text-sm"></i>
+          </button>
+          
+          <!-- Photo Counter badge -->
+          <span id="expLightboxCount" class="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-black/75 backdrop-blur-sm text-xs font-mono text-white/90 border border-white/20 z-20"></span>
         </div>
-        <!-- Caption -->
-        <div class="px-5 py-3.5 sm:px-6 sm:py-4 bg-stone-950 shrink-0">
-          <p id="expLightboxDesc" class="text-xs sm:text-sm text-stone-300 leading-relaxed"></p>
+        <!-- Caption Area with Scrollable Full Description -->
+        <div class="px-5 py-4 sm:px-6 sm:py-5 bg-stone-900 border-t border-white/10 shrink-0 max-h-[40vh] sm:max-h-[34vh] overflow-y-auto">
+          <div id="expLightboxDesc" class="leading-relaxed"></div>
         </div>
       </div>`;
     modal.className = 'fixed inset-0 z-[60] flex items-center justify-center p-3 sm:p-6 transition-opacity duration-300';
@@ -783,20 +966,121 @@ function openExpLightbox(imgSrc, title, desc) {
     });
     document.getElementById('expLightboxClose').addEventListener('click', closeExpLightbox);
 
-    // Close on Escape key
+    // Prev / Next click handlers
+    document.getElementById('expLightboxPrev').addEventListener('click', (e) => {
+      e.stopPropagation();
+      navigateExpPhoto(-1);
+    });
+    document.getElementById('expLightboxNext').addEventListener('click', (e) => {
+      e.stopPropagation();
+      navigateExpPhoto(1);
+    });
+
+    // Keyboard navigation (Escape, ArrowLeft, ArrowRight)
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeExpLightbox();
+      const m = document.getElementById('expLightboxModal');
+      if (m && m.style.display === 'flex') {
+        if (e.key === 'Escape') closeExpLightbox();
+        else if (e.key === 'ArrowLeft') navigateExpPhoto(-1);
+        else if (e.key === 'ArrowRight') navigateExpPhoto(1);
+      }
     });
   }
 
-  // Populate & show
-  document.getElementById('expLightboxImg').src = imgSrc;
-  document.getElementById('expLightboxImg').alt = title;
-  document.getElementById('expLightboxTitle').textContent = title;
-  document.getElementById('expLightboxDesc').textContent = desc;
+  // Handle by experience ID or legacy direct call
+  if (typeof target === 'number' || (!legacyTitle && !legacyDesc && experiencesData.some(e => e.id === Number(target)))) {
+    const expId = Number(target);
+    const expIdx = experiencesData.findIndex(e => e.id === expId);
+    if (expIdx !== -1) {
+      currentExpIdx = expIdx;
+      currentExpPhotoIdx = 0;
+      renderExpLightbox();
+    }
+  } else {
+    // Fallback legacy support
+    currentExpIdx = -1;
+    currentExpPhotoIdx = 0;
+    const imgEl = document.getElementById('expLightboxImg');
+    const titleEl = document.getElementById('expLightboxTitle');
+    const descEl = document.getElementById('expLightboxDesc');
+    const prevBtn = document.getElementById('expLightboxPrev');
+    const nextBtn = document.getElementById('expLightboxNext');
+    const countEl = document.getElementById('expLightboxCount');
+
+    if (imgEl) { imgEl.src = target; imgEl.alt = legacyTitle || ''; }
+    if (titleEl) titleEl.textContent = legacyTitle || '';
+    if (descEl) descEl.innerHTML = formatExpDesc(legacyDesc || '');
+    if (prevBtn) prevBtn.style.display = 'none';
+    if (nextBtn) nextBtn.style.display = 'none';
+    if (countEl) countEl.style.display = 'none';
+  }
+
   modal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
   requestAnimationFrame(() => { modal.style.opacity = '1'; });
+}
+
+function renderExpLightbox() {
+  if (currentExpIdx === -1) return;
+  const exp = experiencesData[currentExpIdx];
+  if (!exp) return;
+
+  const isKm = currentLang === "km";
+  const title = isKm ? exp.titleKm : exp.titleEn;
+  const desc = isKm ? exp.fullDescKm : exp.fullDescEn;
+
+  const imgEl = document.getElementById('expLightboxImg');
+  const titleEl = document.getElementById('expLightboxTitle');
+  const descEl = document.getElementById('expLightboxDesc');
+  const prevBtn = document.getElementById('expLightboxPrev');
+  const nextBtn = document.getElementById('expLightboxNext');
+  const countEl = document.getElementById('expLightboxCount');
+
+  if (titleEl) titleEl.textContent = title;
+  if (descEl) descEl.innerHTML = formatExpDesc(desc);
+
+  const images = exp.images || [];
+  if (imgEl && images.length > 0) {
+    imgEl.src = images[currentExpPhotoIdx];
+    imgEl.alt = title;
+  }
+
+  if (images.length > 1) {
+    if (prevBtn) prevBtn.style.display = 'flex';
+    if (nextBtn) nextBtn.style.display = 'flex';
+    if (countEl) {
+      countEl.style.display = 'block';
+      countEl.textContent = `${currentExpPhotoIdx + 1} / ${images.length}`;
+    }
+  } else {
+    if (prevBtn) prevBtn.style.display = 'none';
+    if (nextBtn) nextBtn.style.display = 'none';
+    if (countEl) countEl.style.display = 'none';
+  }
+}
+
+function navigateExpPhoto(direction) {
+  if (currentExpIdx === -1) return;
+  const exp = experiencesData[currentExpIdx];
+  if (!exp || !exp.images || exp.images.length <= 1) return;
+
+  currentExpPhotoIdx = (currentExpPhotoIdx + direction + exp.images.length) % exp.images.length;
+  updateExpPhoto();
+}
+
+function updateExpPhoto() {
+  if (currentExpIdx === -1) return;
+  const exp = experiencesData[currentExpIdx];
+  if (!exp) return;
+
+  const imgEl = document.getElementById('expLightboxImg');
+  const countEl = document.getElementById('expLightboxCount');
+  if (imgEl && exp.images && exp.images.length > 0) {
+    imgEl.src = exp.images[currentExpPhotoIdx];
+  }
+  if (countEl && exp.images && exp.images.length > 1) {
+    countEl.textContent = `${currentExpPhotoIdx + 1} / ${exp.images.length}`;
+  }
 }
 
 function closeExpLightbox() {
